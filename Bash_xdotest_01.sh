@@ -14,7 +14,7 @@ function SearchApp()
 #Uinstall
 function ScriptUninstall()
 {
-	echo 'czur9007' | sudo -S dpkg --purge xxx
+	echo 'aabbcc' | sudo -S dpkg --purge xxx
 	if [ $? -eq 0 ];then
 		sleep 10
 		echo "Uninstall Success!"		
