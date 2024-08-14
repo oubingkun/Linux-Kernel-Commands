@@ -1,6 +1,5 @@
 #! /bin/bash
 
-
 CURRENT_TIME=`date +%d%H%M | awk "{print$1}" | sed 's/\///g'`
 echo $CURRENT_TIME
 
@@ -55,10 +54,6 @@ do
 		xdotool mousemove 54 113 click 1
 		sleep 6
 
-		# Pics categories
-		xdotool mousemove 800 65 click 1
-		sleep 10
-
 		#down swipe current window
 		for j in {1..10}
 		do
@@ -67,36 +62,10 @@ do
 
 		sleep 3
 
-		#click other
-		xdotool mousemove 1586 529 click 1
-		sleep 10
-
-		#Return 
-		xdotool mousemove 215 19 click 1
-		sleep 7
-
-		#click app
-		xdotool mousemove 1574 836 click 1
-		sleep 8
-
 		#install app
 		xdotool mousemove 1826 99 click 1
 		sleep 400
 
-		# open & wait
-		xdotool mousemove 1826 99 click 1
-		sleep 70
-
-		#close app
-		xdotool mousemove 329 1060 click 3
-		sleep 2
-
-		xdotool mousemove 362 1006 click 1
-		sleep 6
-		
-		#close app store
-		xdotool mousemove 1901 19 click 1
-		sleep 6
 		
 		recv=$(SearchApp)
 		echo $recv
